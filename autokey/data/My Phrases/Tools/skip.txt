@@ -1,0 +1,1 @@
+--skip-plugins --skip-themes

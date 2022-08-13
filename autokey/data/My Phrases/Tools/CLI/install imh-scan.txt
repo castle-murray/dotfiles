@@ -1,0 +1,1 @@
+( rpm -q imh-scan &>/dev/null && echo "imh-scan is installed" || yum install -y imh-scan imh-clamav )

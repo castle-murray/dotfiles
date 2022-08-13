@@ -1,0 +1,1 @@
+yum clean metadata; yum -y update imh-ngxconf

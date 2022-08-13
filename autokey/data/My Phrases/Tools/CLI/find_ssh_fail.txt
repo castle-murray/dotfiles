@@ -1,0 +1,1 @@
+cat /var/log/secure | awk '/Fail/ {print $(NF-3)}' | sort |uniq -c | wc -l

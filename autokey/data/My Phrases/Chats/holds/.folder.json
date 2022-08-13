@@ -1,0 +1,27 @@
+{
+    "type": "folder",
+    "title": "holds",
+    "modes": [
+        1
+    ],
+    "usageCount": 1,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            ".holds"
+        ],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[^ \\n]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

@@ -1,0 +1,23 @@
+(
+service apf stop
+chkconfig --del apf
+tar -czf /backup/apf_backup_$(date +%Y-%m-%d_%H%M).tar.gz /etc/apf
+rm -fr /etc/init.d/apf /usr/local/sbin/apf /etc/apf /usr/local/cpanel/whostmgr/cgi/{apfadd,addon_add2apf.cgi}
+yum -y remove apf-ded whm-addip
+rm -rf /usr/local/cpanel/whostmgr/cgi/apfadd
+rm -f /usr/local/cpanel/whostmgr/cgi/addon_add2apf.cgi
+grep -q add_ip_to_firewall /var/cpanel/pluginscache.yaml && sed '3,/add_ip_to_firewall/d' -i /var/cpanel/pluginscache.yaml
+rm -rf /etc/cron.d/apf-fastload
+yum -y remove firewalld
+yum install -y csf-ded
+service csf start
+cd; curl -sL https://download.configserver.com/csupdate | perl
+sed -i 's/\(LF_\(PERMBLOCK\|SSHD\|FTPD\|SMTPAUTH\|POP3D\|IMAPD\|CPANEL\|HTACCESS\|MODSEC\|CPANEL_ALERT\) *= *"\)[^"]\+/\11/;s/\(\(AUTO_UPDATES\|SMTP_BLOCK\|SYNFLOOD\) *= *"\)[^"]\+/\11/;s/\(LF_TRIGGER *= *"\)[^"]\+/\13/;s/\(SYSLOG_CHECK *= *"\)[^"]\+/\13600/;s/\(LF_INTEGRITY *= *"\)[^"]\+/\186400/;s/CC_SRC = \"1\"/CC_SRC = \"2\"/g' /etc/csf/csf.conf
+csf -r
+service_list=(saslauthd portreserve rpcbind abrt-xorg abrtd)
+for service in "${service_list[@]}"; do
+    systemctl stop $service
+    systemctl disable $service
+    chkconfig $service off
+done
+)

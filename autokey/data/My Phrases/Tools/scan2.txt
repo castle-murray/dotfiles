@@ -1,0 +1,1 @@
+read -p "Ticket Number: " ticket; read -p "cPanel user: " user; imh-scan -Hu $user -e shellscan@inmotionhosting.com -t $ticket

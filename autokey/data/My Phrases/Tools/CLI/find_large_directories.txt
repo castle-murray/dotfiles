@@ -1,0 +1,1 @@
+du -mach --max-depth=1 --exclude=/proc | sort -h | tail

@@ -1,0 +1,1 @@
+echo;echo "Location and volume of mailing scripts:";echo; sudo cat /var/log/exim_mainlog| LC_ALL=C grep -i .|grep cwd|awk -F'=' '{print $2}'|cut -d '' -f 1|sort|uniq -c|sort -nr|head -20;echo;echo; echo " Top Email senders:";echo;sudo cat /var/log/exim_mainlog| awk 'match ($0,/<= ([^@<>]+(@|\+)[^ ]+)/,a) {print a[1]}' |sort|uniq -c|sort -nr|head -20;echo;echo

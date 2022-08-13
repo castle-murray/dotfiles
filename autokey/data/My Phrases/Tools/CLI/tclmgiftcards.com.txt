@@ -1,0 +1,1 @@
+read -p "domain: " domain; cd $(docroot.py $domain)/.well-known/pki-validation/

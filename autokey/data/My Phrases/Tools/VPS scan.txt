@@ -1,0 +1,1 @@
+read -p "Ticket Number: " ticket; imh-scan -Hu $(awk -F: '{print $1}' /etc/trueuserowners) -e shellscan@inmotionhosting.com -t $ticket

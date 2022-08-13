@@ -1,0 +1,5 @@
+(
+pw=$(head /dev/urandom | tr -dc _A-Z-a-z-0-9 | head -c15) ; 
+echo "random password: '${pw}'"
+unset pw 
+)

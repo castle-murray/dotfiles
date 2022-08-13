@@ -1,0 +1,5 @@
+I have sent you an email regarding the upgrade to the newer version of CentOS. This will not change your bill in any way, but there are a few other things that may change as a result of this. The email will go over those changes in detail but I will just mention one of the more important ones here:
+
+Your IP address for your server will be changed. This will only be an issue if you are using any external DNS services (Cloudflare, Godaddy nameservers or similar).  If your Nameservers are pointed to us then all of the changes to the IP address will be made by us  during the upgrade.
+
+

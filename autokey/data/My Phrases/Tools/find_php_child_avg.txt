@@ -1,0 +1,1 @@
+ps -C php-fpm -o "rss,cmd" | awk '/ pool / { sum+=$1; count++ }; END { if (count > 0) printf ("%d%s\n", sum/count/1024,"M") }'

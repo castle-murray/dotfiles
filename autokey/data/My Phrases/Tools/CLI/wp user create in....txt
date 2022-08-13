@@ -1,0 +1,1 @@
+wp user create testuser --role=administrator testing@servconfig.com 

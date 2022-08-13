@@ -1,0 +1,3 @@
+su -
+## seanmu login##
+PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/sharedrads:/opt/tier1adv/bin:/opt/tier1adv/python:/root:/usr/local/cpanel/scripts:/usr/local/cpanel/bin; export PATH

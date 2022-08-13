@@ -1,0 +1,1 @@
+/scripts/updateuserdomains  && /scripts/updateuserdatacache && /scripts/rebuildhttpdconf && apachectl graceful

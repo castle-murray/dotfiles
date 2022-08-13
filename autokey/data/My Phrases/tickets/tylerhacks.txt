@@ -1,0 +1,20 @@
+This is Sean with Support, thank you for your patience as the scan was completed. Unfortunately, the scan did identify some malware/malicious code. The hacked files that were identified in the scan are as follows:
+
+** Insert Log Path or Results (depending on size) **> You can view the report at this file location or see the attachment to this message.
+
+If you'd like, we can quarantine those files for you, however, we are unaware of how the site will function without those files being accessible. Please let us know if you'd like to pursue that option. Although, if you have a known, clean cPanel backup, then you can upload that to the server and then we will be able to assist you with restoring that backup.
+
+Since you have a VPS/Dedicated Server we can also install ImunifyAV which is a free scanning tool for WHM. Here is a link for additional information on Imunify, https://www.inmotionhosting.com/support/product-guides/vps-hosting/getting-started-with-imunifyav-cpanel-plugin/.
+
+Most frequently, hacks the result of out-of-date software installations; any outdated installation on the account can result in hacks on any site on the account. Please note that while upgrading the outdated software is recommended and may close existing vulnerabilities, it will not remove any hacks that have already been injected into the site. Therefore, you should have a developer or someone familiar with the website review the account thoroughly.
+
+We recommend reviewing this with your developer or a security specialist. This link to our Learning Center articles may also assist you:
+https://www.inmotionhosting.com/blog/do-you-think-your-website-is-hacked/
+https://www.inmotionhosting.com/support/website/hacks/recovering-from-a-hack/
+
+Though we can't support third party software, we may be able to make some suggestions or help you find the community for your software so you can seek more information. For more information on Website Security and recovering from hacks, please see the following article:
+https://www.inmotionhosting.com/support/website/new-customers/website-security/.
+
+We have also partnered with Sucuri for customers that may be interested in more advanced options for website security: https://inmotionhosting.com/sucuri.
+
+Please let us know how you would like to proceed with this request. If you have any other questions don't hesitate to contact us, we're here 24/7 via Phone, Live Chat and Email for support. You will also receive an email notification to provide feedback on this support ticket. If you have a moment please feel free to let my manager know how I am doing by rating your experience today.

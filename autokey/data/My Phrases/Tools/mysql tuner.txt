@@ -1,0 +1,1 @@
+curl -sL https://raw.githubusercontent.com/major/MySQLTuner-perl/d04c1c46dc52c371447be60ddb12fa46f7a4488e/mysqltuner.pl | perl

@@ -1,0 +1,1 @@
+echo -n "User to check Exim logs for: ";read user; for i in $(sudo cat /etc/userdomains | grep $user | awk '{print $1}' | sed 's/.$//');do echo $i &&sudo cat /var/log/exim_mainlog | grep $i |wc -l;done

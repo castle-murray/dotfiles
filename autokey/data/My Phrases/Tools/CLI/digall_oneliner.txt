@@ -1,0 +1,1 @@
+read -p "owner: " OWNER; for user in $(awk -v o=$OWNER -F ': ' '$NF == o {print $1}' /etc/trueuserowners) ; do awk -v u=$user -F': ' '$2 == u {system("echo " $1 " $(dig +short ns " $1 ")")}' /etc/userdomains; done

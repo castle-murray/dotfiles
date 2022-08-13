@@ -1,0 +1,27 @@
+{
+    "type": "folder",
+    "title": "Tools",
+    "modes": [
+        1
+    ],
+    "usageCount": 7,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            ".tools"
+        ],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

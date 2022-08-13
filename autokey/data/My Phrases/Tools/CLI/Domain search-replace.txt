@@ -1,0 +1,23 @@
+(
+Red='\033[1;31m';NC='\033[0m';Green='\033[0;32m'
+echo -e ${Red}Must be in root of WordPress to work${NC}
+echo -e ${Red}ONLY enter domain nothing else ie. example.com${NC}
+read -p 'Change from: ' from
+read -p 'Change to: ' to
+echo -------------------
+echo -e ${Green}Backing up Database${NC}
+wp db export ~/wordpressdbbackup.$(date -I).sql --skip-plugins --skip-themes
+echo -------------------
+echo -e ${Green}Changing from: $from to $to${NC}
+wp search-replace $from $to --format=count --skip-plugins --skip-themes
+echo -------------------
+echo -e ${Green}Changing from: www.$to to $to${NC}
+wp search-replace www.$to $to --format=count --skip-plugins --skip-themes
+echo -------------------
+echo -e ${Green}Changing from: http://$to to https://$to${NC}
+wp search-replace http://$to https://$to --format=count --skip-plugins --skip-themes
+echo -------------------
+echo -e ${Green}Flushing WordPress Cache${NC}
+wp cache flush --all --skip-plugins --skip-themes
+echo -e ${Green}Tasks are completed${NC}
+)

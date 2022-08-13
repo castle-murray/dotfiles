@@ -1,0 +1,1 @@
+wget -O /root/sys-snap.pl https://raw.githubusercontent.com/cPanelTechs/SysSnapv2/master/sys-snap.pl && cd /root/ && chmod 744 sys-snap.pl && perl sys-snap.pl --start

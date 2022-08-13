@@ -1,0 +1,27 @@
+{
+    "type": "folder",
+    "title": "Chats",
+    "modes": [
+        1
+    ],
+    "usageCount": 6,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            ".chats"
+        ],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[^ \\n]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}
